@@ -11,7 +11,7 @@
 
 &mt {
   tapping-term-ms = <400>;
-}
+};
 
 &mmv {
   acceleration-exponent = <1>;
@@ -19,7 +19,7 @@
   delay-ms = <0>;                   
 };
 
-#define U_MOUSE_MOVE_MAX 1250       // 600
+#define U_MOUSE_MOVE_MAX 1250
 
 #undef MOVE_UP
 #undef MOVE_DOWN
