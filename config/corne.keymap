@@ -99,4 +99,5 @@
                                                      &kp LALT     &trans         &kp SPACE     &kp RET        &trans          &kp RALT
                         >;                	
                 };
+     };
 };
