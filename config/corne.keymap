@@ -36,15 +36,15 @@
 
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
-		conditional_layers {
+	    conditional_layers {
 			compatible = "zmk,conditional-layers";
 			tri_layer {
 			    if-layers = <1 2>;
 			    then-layer = <3>;
 			};
-		    };
+		};
+        keymap {
+                compatible = "zmk,keymap";
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
