@@ -74,7 +74,7 @@
 //                    | ALT |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB   &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &mt HOME LEFT &mt PGDWN DOWN &mt PGUP UP     &mt END RIGHT &trans   &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &mt HOME LEFT &mt PG_DN DOWN &mt PG_UP UP    &mt END RIGHT &trans   &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans        &trans         &trans          &trans        &trans   &trans
                                                      &kp LALT     &trans         &kp SPACE     &kp RET        &trans          &kp RALT
                         >;
