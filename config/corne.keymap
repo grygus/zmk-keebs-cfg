@@ -38,13 +38,13 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-				conditional_layers {
-				        compatible = "zmk,conditional-layers";
-				        tri_layer {
-				            if-layers = <1 2>;
-				            then-layer = <3>;
-				        };
-				    };
+		conditional_layers {
+			compatible = "zmk,conditional-layers";
+			tri_layer {
+			    if-layers = <1 2>;
+			    then-layer = <3>;
+			};
+		    };
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -98,6 +98,5 @@
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans        &trans         &trans          &trans        &trans   &trans
                                                      &kp LALT     &trans         &kp SPACE     &kp RET        &trans          &kp RALT
                         >;                	
-                }
-        };
+                };
 };
