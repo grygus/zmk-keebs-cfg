@@ -25,7 +25,8 @@
 };
 
 &lt {
-  tapping-terms-ms = <TAP_MS>;
+  flavor = "tap-preferred"
+  tapping-term-ms = <TAP_MS>;
   quick-tap-ms = <TAP_MS>;
 };
 
