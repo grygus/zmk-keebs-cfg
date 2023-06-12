@@ -24,12 +24,6 @@
   hold-trigger-key-positions = <0>;
 };
 
-&lt {
-  flavor = "tap-preferred";
-  tapping-terms-ms = <TAP_MS>;
-  quick-tap-ms = <TAP_MS>;
-};
-
 &mmv {
   acceleration-exponent = <1>;
   time-to-max-speed-ms = <1000>;
