@@ -55,6 +55,7 @@
                 bindings = <&kp>, <&kp>;
             };
     };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -62,9 +63,10 @@
             then-layer = <ADJUST>;
         };
     };
+
     keymap {
-                compatible = "zmk,keymap";
-                default_layer {
+            compatible = "zmk,keymap";
+            default_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -76,36 +78,36 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp TILDE
                   &kp LCTRL &kp LALT &lt LOWER SPACE    &lt RAISED RET &kp RALT &kp LGUI
                         >;
-                    };
-                lower_layer {
+                };
+            lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL | ML  | MD  | MU  | MR  | MSU |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     | MLC | MRC | MSD |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | ALT |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   AS(N1)          AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)    AS(N7)    AS(N8)          AS(N9)   AS(N0)   &kp BSPC
-   &kp LCTRL &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT   &mwh SCROLL_UP    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans          &trans         &mkp LCLK     &mkp RCLK         &mwh SCROLL_DOWN  &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &trans    AS(N1)          AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)    AS(N7)    AS(N8)          AS(N9)   AS(N0)   &kp BSPC
+   &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT   &mwh SCROLL_UP    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &trans    &trans          &trans         &mkp LCLK     &mkp RCLK         &mwh SCROLL_DOWN  &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
              &kp LALT        &trans         &kp SPACE     &kp RET           &trans            &kp RALT
                         >;
-                };
+            };
 
-                raise_layer {
+            raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL | F1  | F2  | F3  | F4  |  F5 |   | LFT | DWN |  UP | RGT | DEL |      |
 // | SHFT | F6  | F7  | F8  | F9  | F10 |   | F11 | F12 |     |     |     |      |
 //                    | ALT |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB   &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR &kp BSPC
-   &trans     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &mt HOME LEFT &mt PG_DN DOWN &mt PG_UP UP    &mt END RIGHT &kp DEL  &trans
-   &kp LSHFT  &kp F6       &kp F7       &kp F8       &kp F9       &kp F10        &kp F11       &kp F12        &trans          &trans        &trans   &trans
+   &trans    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR &kp BSPC
+   &trans    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &mt HOME LEFT &mt PG_DN DOWN &mt PG_UP UP    &mt END RIGHT &kp DEL  &trans
+   &trans    &kp F6       &kp F7       &kp F8       &kp F9       &kp F10        &kp F11       &kp F12        &trans          &trans        &trans   &trans
                                                      &kp LALT     &trans         &kp SPACE     &kp RET        &trans          &kp RALT
                         >;
-                };
+            };
 
-                adjust_layer {
+            adjust_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
