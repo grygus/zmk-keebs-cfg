@@ -49,17 +49,17 @@
                 compatible = "zmk,keymap";
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | ALT | LWR | SPC |   | ENT | RSE  | ALT |
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  | ~   |
+//                    | CTL | ALT |SPC/LWR| | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &mt LGUI B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &mo LOWER &kp SPACE    &kp RET &mo RAISED &kp RALT
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &mt LGUI B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp TILDE
+                  &kp LCTRL &kp LALT &lt LOWER SPACE    &kp RET &mo RAISED &kp RALT
                         >;
-                };
+	                };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
