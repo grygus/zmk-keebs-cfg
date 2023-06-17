@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define AS(keycode) &as LS(keycode) keycode
-#define TAP_MS 300
-#define U_MOUSE_MOVE_MAX 1400
+#define TAP_MS 250
+#define U_MOUSE_MOVE_MAX 1500
 
 #define LOWER 1
 #define RAISED 2
@@ -75,10 +75,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  |  ~   |
 //                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT  | LGUI |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB &kp A &kp S &kp D &kp F &kp G                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp TILDE
-                  &kp LCTRL &kp LALT &lt LOWER SPACE    &lt RAISED RET &kp RALT &kp LGUI
+   &kp ESC   &kp Q &kp W     &kp E &kp R &kp T           &kp Y           &kp U    &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp A &kp S     &kp D &kp F &kp G           &kp H           &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X     &kp C &kp V &kp B           &kp N           &kp M    &kp COMMA &kp DOT &kp FSLH &kp GRAVE
+                   &kp LCTRL &kp LALT &lt LOWER SPACE    &lt RAISED RET  &kp LGUI &kp RALT
                         >;
                 };
             lower_layer {
