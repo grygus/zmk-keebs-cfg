@@ -72,7 +72,7 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  |  ~   |
+// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  |  `   |
 //                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT  | LGUI |
                         bindings = <
    &kp ESC   &kp Q &kp W     &kp E &kp R &kp T           &kp Y           &kp U    &kp I     &kp O   &kp P    &kp BSPC
