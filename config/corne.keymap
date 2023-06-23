@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define AS(keycode) &as LS(keycode) keycode
-#define TAP_MS 250
+#define TAP_MS 200
 #define U_MOUSE_MOVE_MAX 1500
 
 #define LOWER 1
