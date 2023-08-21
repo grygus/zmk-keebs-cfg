@@ -56,6 +56,15 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
             };
+         ht: hold_tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOLD_TAP";
+                #binding-cells = <2>;
+                tapping_term_ms = <TAP_MS>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
     };
 
     conditional_layers {
@@ -75,10 +84,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  |  `   |
 //                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT  | LGUI |
                         bindings = <
-   &kp ESC   &kp Q &kp W     &kp E &kp R &kp T           &kp Y           &kp U    &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB   &kp A &kp S     &kp D &kp F &kp G           &kp H           &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X     &kp C &kp V &kp B           &kp N           &kp M    &kp COMMA &kp DOT &kp FSLH &kp GRAVE
-                   &kp LCTRL &kp LALT &lt LOWER SPACE    &lt RAISED RET  &kp LGUI &kp RALT
+   &kp ESC   &kp Q &kp W     &kp E       &kp R       &kp T           &kp Y           &kp U    &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp A &kp S     &kp D       &kp F       &kp G           &kp H           &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X     &ht C LC(C) &ht V LC(V) &kp B           &kp N           &kp M    &kp COMMA &kp DOT &kp FSLH &kp GRAVE
+                             &kp LCTRL   &kp LALT    &lt LOWER SPACE &lt RAISED RET  &kp LGUI &kp RALT
                         >;
                 };
             lower_layer {
