@@ -1,0 +1,22 @@
+/ {
+
+    behaviors {
+        as: auto_shift {
+                compatible = "zmk,behavior-hold-tap";
+                label = "AUTO_SHIFT";
+                #binding-cells = <2>;
+                tapping_term_ms = <TAP_MS>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <LOWER RAISED>;
+            then-layer = <ADJUST>;
+        };
+    };
+};
