@@ -33,15 +33,15 @@
             compatible = "zmk,keymap";
             default_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /  |  `   |
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P   | BKSP |
+// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |;/lgui|  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |B/LGUI|  |  N  |  M   |  ,  |  .  |  /   |  `   |
 //                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT  | LGUI |
                         bindings = <
    &kp ESC   &kp Q       &kp W          &kp E       &kp R       &kp T           &kp Y           &kp U    &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB   &kp A       &kp S          &kp D       &kp F       &kp G           &kp H           &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+   &kp TAB   &kp A       &kp S          &kp D       &kp F       &kp G           &kp H           &kp J    &kp K     &kp L   &mt LGUI SEMI &kp SQT
    &kp LSHFT &mt LC(Z) Z &mt LC(X) X    &mt LC(C) C &mt LC(V) V &kp B           &kp N           &kp M    &kp COMMA &kp DOT &kp FSLH &kp GRAVE
-                                        &kp LCTRL   &kp LALT    &lt LOWER SPACE &lt RAISED RET  &kp LGUI &kp RALT
+                                        &kp LCTRL   &kp LALT    &lt LOWER SPACE &lt RAISED RET  &kp DEL  &kp RALT
                         >;
                 };
             lower_layer {
