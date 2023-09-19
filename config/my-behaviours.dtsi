@@ -1,5 +1,4 @@
 / {
-
     behaviors {
         as: auto_shift {
                 compatible = "zmk,behavior-hold-tap";
@@ -10,13 +9,14 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
             };
+
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LCTRL|MOD_LALT)>;
-            keep-mods = <(MOD_LCTRL|MOD_LALT)>;
+            mods = <MOD_LCTL>, <MOD_LALT>;
+            keep-mods = <MOD_LCTL>, <MOD_LALT>;
         };
     };
 
