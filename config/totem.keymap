@@ -52,17 +52,17 @@
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃  S/LCTRL  ┃   D/LALT  ┃  F/LSHT   ┃     G     ┃   ┃   H/INS   ┃  J/LSHFT  ┃   K/LALT  ┃  L/LCTRL  ┃  ;/LGUI   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃  LSHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃   M/RALT  ┃     ,     ┃     .     ┃     /     ┃    '/`    ┃
+// ┃  LSHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃    '/`    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LCTRL   ┃    TAB    ┃  SPC/LWR  ┃   ┃ ENTER/RSD ┃    DEL    ┃   BSPC    ┃
+//                                     ┃   LCTRL   ┃    TAB    ┃  SPC/LWR  ┃   ┃ ENTER/RSD ┃    RALT   ┃  BSPC/DEL ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷               ╷             ╷           ╷            ╷           ╷           ╷
 
                  &mt ESC Q   &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P       
-                 &kp A       &mt LCTRL S    &mt LALT D  &mt LSHIFT F &kp G           &mt INSERT H &mt LSHIFT J &mt LALT K   &mt LCTRL L  &mt LGUI SEMI    
-     &kp LSHFT   &mt LC(Z) Z &mt LC(X) X    &mt LC(C) C &mt LC(V) V  &kp B           &kp N        &mt RALT M   &kp COMMA    &kp DOT      &kp FSLH   &mt GRAVE SQT
-                                            &kp LCTRL   &kp TAB   &lt LOWER SPACE &lt RAISED RET &kp DEL &kp BSPC
+                 &kp A       &mt LCTRL S    &mt LALT D  &mt LSHIFT F &mt DEL G       &mt INSERT H &mt LSHIFT J &mt LALT K   &mt LCTRL L  &mt LGUI SEMI    
+     &kp LSHFT   &mt LC(Z) Z &mt LC(X) X    &mt LC(C) C &mt LC(V) V  &kp B           &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH   &mt GRAVE SQT
+                                            &kp LCTRL   &kp TAB      &lt LOWER SPACE &lt RAISED RET &kp RALT   &bspc_del
                         >;
                 };
 
@@ -113,7 +113,7 @@ label= "RAISE"                               ;
 
                 &kp EXCL     &kp AT       &kp HASH     &kp DLLR    &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR 
                 &none        &trans       &trans       &trans      &none          &mt HOME LEFT &mt PG_DN DOWN &mt PG_UP UP    &mt END RIGHT &none
-      &trans    &none        &none        &none        &none       &none          &none         &none           &none          &none         &none       &none 
+      &kp F1    &kp F2       &kp F3       &kp F4       &kp F5      &kp F6         &kp F7        &kp F8         &kp F9          &kp F10       &kp F11     &kp F12 
                                           &trans       &trans      &trans         &trans        &trans         &trans
                         >;
                 };
