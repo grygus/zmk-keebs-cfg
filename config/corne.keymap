@@ -22,7 +22,7 @@
                         bindings = <
      &kp ESC     &mt ESC Q   &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P      &kp BSPC
      &kp TAB     &kp A       &mt LCTRL S    &mt LALT D  &mt LSHIFT F &kp G           &mt INSERT H &mt LSHIFT J &mt LALT K   &mt LCTRL L  &mt LGUI SEMI &kp GRAVE   
-     &kp LSHFT   &mt LC(Z) Z &mt LC(X) X    &mt LC(C) C &mt LC(V) V  &kp B           &kp N        &mt M        &kp COMMA    &kp DOT      &kp FSLH   &mt GRAVE SQT
+     &kp LSHFT   &mt LC(Z) Z &mt LC(X) X    &mt LC(C) C &mt LC(V) V  &kp B           &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH   &mt GRAVE SQT
                                             &kp LCTRL   &kp TAB   &lt LOWER SPACE &lt RAISED RET  &mt RALT DEL &bspc_del
                         >;
                 };
