@@ -1,5 +1,6 @@
 #define AS(keycode) &as LS(keycode) keycode
 #define TAP_MS 200
+#define QUICK_TAP_MS 50
 
 #define LOWER 1
 #define RAISED 2
@@ -8,7 +9,7 @@
 &mt {
   flavor = "balanced";
   tapping-term-ms = <TAP_MS>;
-  quick-tap-ms = <0>;
+  quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 &lt {
