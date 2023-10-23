@@ -15,23 +15,23 @@
             compatible = "zmk,keymap";
             default_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P   | BKSP |
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P   |   \  |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |;/lgui|  `   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /   |  '/` |
-//                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT  | LGUI |
+//                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT/DEL | BSPC |
                         bindings = <
-     &kp ESC     &mt ESC Q   &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P      &kp BSPC
+     &kp ESC     &mt ESC Q   &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P      &kp BSLH
      &kp TAB     &kp A       &mt LCTRL S    &mt LALT D  &mt LSHIFT F &kp G           &mt INSERT H &mt LSHIFT J &mt LALT K   &mt LCTRL L  &ht LGUI SEMI &kp GRAVE   
      &kp LSHFT   &ht LC(Z) Z &ht LC(X) X    &ht LC(C) C &ht LC(V) V  &kp B           &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH   &ht GRAVE SQT
-                                            &kp LCTRL   &kp TAB   &lt LOWER SPACE &lt RAISED RET  &mt RALT DEL &bspc_del
+                                            &kp LCTRL   &kp LALT   &lt LOWER SPACE &lt RAISED RET  &mt RALT DEL &kp BSPC
                         >;
                 };
             lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL | ML  | MD  | MU  | MR  | MSU |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     | MLC | MRC | MSD |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | ALT |     | SPC |   | ENT |     | ALT |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |   \  |
+// | TAB  | xxx |lctrl| LALT|LSHT | xxx |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     | xxx | xxx | xxx |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | CTL | ALT | SPC |   | ENT | ALT/DEL | BSPC |
                         bindings = <
      &trans      AS(N1)         AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)        AS(N7)            AS(N8)             AS(N9)           AS(N0)   &trans 
      &trans      &none          &kp LCTRL      &kp LALT      &kp LSHIFT        &none             &kp MINUS     &mt LSHIFT EQUAL  &mt LALT LBKT      &mt RBKT LCTRL   &kp PIPE &trans
@@ -42,10 +42,10 @@
 
             raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL | F1  | F2  | F3  | F4  |  F5 |   | LFT | DWN |  UP | RGT | DEL |      |
-// | SHFT | F6  | F7  | F8  | F9  | F10 |   | F11 | F12 |     |     |     |      |
-//                    | ALT |     | SPC |   | ENT |     | ALT |
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |   \  |
+// | TAB  | xx  |lctrl| LALT|LSHT | xxx |   | LFT | DWN |  UP | RGT |     |  `   |
+// | SHFT | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  |  F9 | F10 | F11 |  F12 |
+//                    | CTL | ALT | SPC |   | ENT |     | ALT |
                         bindings = <
       &trans    &kp EXCL     &kp AT       &kp HASH     &kp DLLR    &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR    &trans
       &trans    &none        &trans       &trans       &trans      &none          &ht HOME LEFT &ht PG_DN DOWN &ht PG_UP UP    &ht END RIGHT &none       &trans
@@ -56,10 +56,10 @@
 
             adjust_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | ALT |     | SPC |   | ENT |     | ALT |
+// |      | RST |     |     |     |     |   |     |     |     |     |     |      |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
+// | CLR  |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     |     | SPC |   | ENT |     |     |
                         bindings = <
 
    &none         &sys_reset   &none        &none        &none        &none        &none      &none        &none      &none        &none    &none
