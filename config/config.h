@@ -1,6 +1,6 @@
 #define AS(keycode) &as LS(keycode) keycode
 #define TAP_MS 200
-#define QUICK_TAP_MS 130
+#define QUICK_TAP_MS 0
 
 #define LOWER 1
 #define RAISED 2
