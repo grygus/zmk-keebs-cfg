@@ -7,7 +7,7 @@
 #define ADJUST 3
 
 &mt {
-  flavor = "balanced";
+  flavor = "tap-preferred";
   tapping-term-ms = <TAP_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
 };
