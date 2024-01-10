@@ -3,8 +3,8 @@
         as: auto_shift {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping_term_ms = <TAP_MS>;
-                quick_tap_ms = <TAP_MS>;
+                tapping-term-ms = <TAP_MS>;
+                quick-tap-ms = <TAP_MS>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
             };
@@ -12,8 +12,8 @@
         ht: hold_tap {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping_term_ms = <TAP_MS>;
-                quick_tap_ms = <TAP_MS>;
+                tapping-term-ms = <TAP_MS>;
+                quick-tap-ms = <TAP_MS>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
             };
