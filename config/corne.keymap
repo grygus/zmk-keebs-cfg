@@ -33,8 +33,8 @@
 // | SHFT |     |     | xxx | xxx | xxx |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | CTL | ALT | SPC |   | ENT | ALT/DEL | BSPC |
                         bindings = <
-     &trans      AS(N1)         AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)        AS(N7)            AS(N8)             AS(N9)           AS(N0)   &trans 
-     &trans      &none          &kp LCTRL      &kp LALT      &kp LSHIFT        &none             &kp MINUS     &mt LSHIFT EQUAL  &mt LALT LBKT      &mt LCTRL RBKT   &kp PIPE &trans
+     &trans      AS(N1)         AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)        AS(N7)            AS(N8)             AS(N9)           AS(N0)     &trans 
+     &trans      &none          &kp LCTRL      &kp LALT      &kp LSHIFT        &none             &kp MINUS     &kp EQUAL         &kp LBKT           &kp RBKT         &kp PIPE   &trans
      &trans      &none          &none          &none         &none             &none             &kp UNDER     &kp PLUS          &kp LBRC           &kp RBRC         &kp BSLH   &kp TILDE
                                                &trans        &trans            &trans            &trans        &trans            &trans
                         >;
