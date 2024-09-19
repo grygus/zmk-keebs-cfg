@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include "config.h"
 #include "my-behaviours.dtsi"
 
@@ -19,8 +20,9 @@
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |;/lgui|  `   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /   |  ' |
 //                    | CTL | ALT |SPC/LWR| |ENT/RSE| ALT/DEL | BSPC |
+                        display-name = "Base";
                         bindings = <
-     &kp ESC     &mt ESC Q   &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P      &kp BSLH
+     &kp ESC     &kp Q       &kp W          &kp E       &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O        &kp P      &kp BSLH
      &kp TAB     &kp A       &kp S          &kp D       &kp F        &kp G           &ht INSERT H &kp J        &kp K        &kp L        &ht LGUI SEMI &kp GRAVE   
      &kp LSHFT   &kp Z       &ht LC(X) X    &ht LC(C) C &ht LC(V) V  &kp B           &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH   &kp SQT
                                             &kp LCTRL   &kp LALT   &lt LOWER SPACE &lt RAISED RET  &mt RALT DEL &kp BSPC
@@ -32,6 +34,7 @@
 // | TAB  | xxx |lctrl| LALT|LSHT | xxx |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     | xxx | xxx | xxx |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | CTL | ALT | SPC |   | ENT | ALT/DEL | BSPC |
+                        display-name = "Lower";
                         bindings = <
      &trans      AS(N1)         AS(N2)         AS(N3)        AS(N4)            AS(N5)            AS(N6)        AS(N7)            AS(N8)             AS(N9)           AS(N0)     &trans 
      &trans      &none          &kp LCTRL      &kp LALT      &kp LSHIFT        &none             &kp MINUS     &kp EQUAL         &kp LBKT           &kp RBKT         &kp PIPE   &trans
@@ -46,6 +49,7 @@
 // | TAB  | xx  |lctrl| LALT|LSHT | xxx |   | LFT | DWN |  UP | RGT |     |  `   |
 // |F1/SHT| F2  | F3  | F4  | F5  | F6  |   | F7  | F8  |  F9 | F10 | F11 |  F12 |
 //                    | CTL | ALT | SPC |   | ENT |     | ALT |
+                        display-name = "Raise";
                         bindings = <
       &trans          &kp EXCL     &kp AT       &kp HASH     &kp DLLR    &kp PRCNT      &kp CARET     &kp AMPS       &kp KP_MULTIPLY &kp LPAR      &kp RPAR    &trans
       &trans          &none        &trans       &trans       &trans      &none          &ht HOME LEFT &ht PG_DN DOWN &ht PG_UP UP    &ht END RIGHT &none       &trans
@@ -60,6 +64,7 @@
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
 // | CLR  |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     | SPC |   | ENT |     |     |
+                        display-name = "Adj";
                         bindings = <
 
    &none         &sys_reset   &none        &none        &none        &none        &none      &none        &none      &none        &none    &none
