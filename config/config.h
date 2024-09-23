@@ -5,7 +5,9 @@
 #define LOWER 1
 #define RAISED 2
 #define ADJUST 3
-
+#define C_LOWER 5
+#define C_RAISED 6
+#
 &mt {
   flavor = "tap-preferred";
   tapping-term-ms = <TAP_MS>;
