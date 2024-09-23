@@ -80,7 +80,7 @@
      &none          &none        &none          &none       &none           &none                                           &none             &none             &none              &none            &none      &none
      &trans         AS(N1)       AS(N2)         AS(N3)      AS(N4)          AS(N5)                                          AS(N6)            AS(N7)            AS(N8)             AS(N9)           AS(N0)     &trans 
      &trans         &none        &kp LCTRL      &kp LALT    &kp LSHIFT      &none                                           &kp MINUS         &kp EQUAL         &kp LBKT           &kp RBKT         &kp PIPE   &trans
-     &trans         &none        &none          &none       &none           &none             &none             &none       &kp UNDER         &kp PLUS          &kp LBRC           &kp RBRC         &kp BSLH   &kp TILDE
+     &trans         &none        &none          &none       &none           &none             &trans            &trans      &kp UNDER         &kp PLUS          &kp LBRC           &kp RBRC         &kp BSLH   &kp TILDE
                                                 &none       &trans          &trans            &trans            &trans      &trans            &trans
                         >;
             };
@@ -91,7 +91,7 @@
       &none           &none        &none          &none       &none           &none                                &none             &none             &none           &none         &none       &none 
       &trans          &kp EXCL     &kp AT         &kp HASH    &kp DLLR        &kp PRCNT                            &kp CARET         &kp AMPS          &kp KP_MULTIPLY &kp LPAR      &kp RPAR    &trans
       &trans          &none        &trans         &trans      &trans          &none                                &ht HOME LEFT     &ht PG_DN DOWN    &ht PG_UP UP    &ht END RIGHT &none       &trans
-      &ht LSHFT F1    &kp F2       &kp F3         &kp F4      &kp F5          &kp F6     &none          &none      &kp F7            &kp F8            &kp F9          &kp F10       &kp F11     &kp F12
+      &ht LSHFT F1    &kp F2       &kp F3         &kp F4      &kp F5          &kp F6     &trans         &trans     &kp F7            &kp F8            &kp F9          &kp F10       &kp F11     &kp F12
                                                   &none       &trans          &trans     &trans         &trans     &trans            &trans            &none
                         >;
             };
