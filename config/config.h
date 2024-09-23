@@ -5,8 +5,8 @@
 #define LOWER 1
 #define RAISED 2
 #define ADJUST 3
-#define C_LOWER 5
-#define C_RAISED 6
+#define D_LOWER 5
+#define D_RAISED 6
 #
 &mt {
   flavor = "tap-preferred";
