@@ -25,10 +25,5 @@
             if-layers = <LOWER RAISED>;
             then-layer = <ADJUST>;
         };
-        tri_layer_dev {
-            if-layers = <D_LOWER D_RAISED>;
-            then-layer = <ADJUST>;
-        };
-
     };
 };
