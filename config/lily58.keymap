@@ -64,7 +64,7 @@
                                            &none        &none        &none        &trans         &trans     &none        &none      &none
                         >;                  
                 };
-        default_layer {
+        default_corne_layer {
                        display-name = "C-Base";
                         bindings = <
      &none          &none        &none          &none       &none           &none                                           &none        &none        &none        &none    &none 
