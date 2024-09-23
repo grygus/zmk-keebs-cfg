@@ -75,7 +75,7 @@
                         >;
                 };
              lower_dev_layer {
-                       display-name = "Dev-Lower";
+                       display-name = "DevLOW";
                         bindings = <
      &none          &none        &none          &none       &none           &none                                        &none             &none             &none              &none            &none      &none
      &trans         AS(N1)       AS(N2)         AS(N3)      AS(N4)          AS(N5)                                       AS(N6)            AS(N7)            AS(N8)             AS(N9)           AS(N0)     &trans 
@@ -86,7 +86,7 @@
             };
 
             raise_dev_layer {
-                        display-name = "Dev-Raise";
+                        display-name = "DevRSD";
                         bindings = <
       &none           &none        &none          &none       &none           &none                                &none             &none             &none           &none         &none       &none 
       &trans          &kp EXCL     &kp AT         &kp HASH    &kp DLLR        &kp PRCNT                            &kp CARET         &kp AMPS          &kp KP_MULTIPLY &kp LPAR      &kp RPAR    &trans
