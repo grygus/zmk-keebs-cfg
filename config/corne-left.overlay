@@ -1,0 +1,6 @@
+&glidepoint_listener {
+    status = "okay";
+    input-processors = <
+        &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)
+    >;
+};
