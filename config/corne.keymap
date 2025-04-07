@@ -12,7 +12,6 @@
 #include "config.h"
 #define ADJUST 3
 #include "my-behaviours.dtsi"
-#include "corne.dtsi"
 
 / {
     keymap {

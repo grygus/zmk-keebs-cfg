@@ -1,3 +1,5 @@
+#include "corne.dtsi"
+
 &glidepoint_split {
     device = <&glidepoint0>;
 };
