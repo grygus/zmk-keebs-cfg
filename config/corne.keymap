@@ -12,6 +12,7 @@
 #include "config.h"
 #define ADJUST 3
 #include "my-behaviours.dtsi"
+#include "cirque.dtsi"
 
 / {
     keymap {
