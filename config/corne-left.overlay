@@ -1,5 +1,0 @@
-#include "corne.dtsi"
-
-&glidepoint_listener {
-    status = "okay";
-};
