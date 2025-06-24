@@ -40,6 +40,13 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
+space_fn: hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "SpaceFN";
+      flavor = "tap-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+    };
     };
 
     conditional_layers {
