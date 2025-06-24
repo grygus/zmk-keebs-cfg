@@ -40,7 +40,7 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
-space_fn: hold_tap {
+space_fnc: hold_tap {
       compatible = "zmk,behavior-hold-tap";
       label = "SpaceFN";
       flavor = "tap-preferred";
