@@ -1,13 +1,6 @@
 / {
     behaviors {
-        as: auto_shift {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                tapping-term-ms = <TAP_MS>;
-                quick-tap-ms = <TAP_MS>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
+    
 
         ht: hold_tap {
                 compatible = "zmk,behavior-hold-tap";
