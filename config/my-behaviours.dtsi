@@ -1,7 +1,21 @@
 / {
     behaviors {
     
-
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+              <&macro_press>,
+              <&macro_param_1to1>,
+              <&macro_param_1to2>,
+              <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+              <&macro_pause_for_release>,
+              <&macro_release>,
+              <&macro_param_1to1>,
+              <&macro_param_1to2>,
+              <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+          };
         ht: hold_tap {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
